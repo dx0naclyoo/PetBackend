@@ -6,12 +6,14 @@ load_dotenv()
 
 
 class DatabaseSettings(BaseSettings):
-    pass
+    url: str = os.getenv("POSTGRES_URL")
+    echo: bool = True
 
 
 class AppSettings(BaseSettings):
-    host: str = "0.0.0.0"
+    host: str = "localhost"
     port: int = 10000
 
 
-appSettings = AppSettings()
+app_settings = AppSettings()
+database_settings = DatabaseSettings()
