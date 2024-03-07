@@ -2,8 +2,8 @@ from pydantic_settings import BaseSettings
 
 
 class AppSettings(BaseSettings):
-    host: str = "127.0.0.1"
-    port: int = 8080
+    host: str = "0.0.0.0"
+    port: int = 10000
 
 
 appSettings = AppSettings()
