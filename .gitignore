@@ -137,6 +137,9 @@ venv.bak/
 
 # mkdocs documentation
 /site
+/certs
+.jwt-private.pem
+.jwt-public.pem
 
 # mypy
 .mypy_cache/

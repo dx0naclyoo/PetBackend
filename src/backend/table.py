@@ -1,6 +1,6 @@
 from enum import Enum
 
-from sqlalchemy import Integer, Text
+from sqlalchemy import Integer, Text, LargeBinary
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 

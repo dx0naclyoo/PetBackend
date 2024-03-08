@@ -1,5 +1,5 @@
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession
-from settings import database_settings
+from settings import setting
 
 
 class DatabaseHandler:
@@ -15,4 +15,4 @@ class DatabaseHandler:
             yield session
 
 
-databaseHandler = DatabaseHandler(database_settings.url, database_settings.echo)
+databaseHandler = DatabaseHandler(setting.database.url, setting.database.echo)
